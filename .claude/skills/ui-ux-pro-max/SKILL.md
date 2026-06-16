@@ -62,6 +62,38 @@ This Skill is not needed in the following situations:
 | 9 | Navigation Patterns | HIGH | `ux` | Predictable back, Bottom nav ≤5, Deep linking | Overloaded nav, Broken back behavior, No deep links |
 | 10 | Charts & Data | LOW | `chart` | Legends, Tooltips, Accessible colors | Relying on color alone to convey meaning |
 
+## Component Library Intelligence (don't hand-roll what a library already does)
+
+Before hand-building any component that is **richer than a shadcn primitive** — anything animated, interactive, data-heavy, or domain-specific — route to the right third-party library instead. The companion **`component-libraries`** skill is the routing brain: it maps a need to the best library, gives the exact install command, dependencies, full component lists, and integration gotchas.
+
+**Load `component-libraries` whenever the task involves:** animated hero / landing effects, marquee, particle/aurora/beam/grid backgrounds, animated text (typing, gradient, scramble, count-up), bento grid, dock, globe, confetti, meteors, rich-text / WYSIWYG editor, kanban board, gantt chart, code block, AI chat UI, file dropzone, product variant selector, ratings, cart, price format, team/pricing/testimonial/CTA sections, advanced date/time pickers, combobox, sortable lists, or any "fancy / animated / interactive component."
+
+### Fast routing (need → library)
+
+| Need | Use | Backup |
+|------|-----|--------|
+| Animated text & WebGL backgrounds | **react-bits** | Magic UI |
+| Marketing special effects (beam, meteors, confetti), marquee, bento, dock, globe, device mocks | **Magic UI** | react-bits |
+| Small micro-interaction widgets | **Animata** | KokonutUI |
+| AI UI blocks, fancy cards, stylish buttons | **KokonutUI** | Magic UI |
+| Rich-text / WYSIWYG / Notion-like editor | **Plate** | Kibo UI editor |
+| Kanban, gantt, table, tree, code-block, calendar, media, dropzone | **Kibo UI** | ui-x |
+| Advanced date/time, combobox, sortable, password, virtualizer | **ui-x** | Kibo UI |
+| E-commerce: product variants, ratings, cart, price, quantity | **stackzero/ui** | bundui |
+| Whole marketing/dashboard section blocks (hero, pricing, team) | **bundui** | Magic UI |
+| Panda CSS or Solid/Vue (multi-framework) primitives | **Park UI** | — |
+
+### Integration rules (critical)
+
+1. **shadcn registry first** — 9 of these install via `npx shadcn@latest add <url>` and drop editable source into the repo. Run `npx shadcn@latest init` first.
+2. **One motion lib** — standardize on `motion` (framer-motion); don't also add GSAP/react-spring.
+3. **One accent library per project** — shadcn base + ONE flashy library (react-bits/Magic UI/KokonutUI) + Kibo/ui-x/stackzero for function. Don't stack them all.
+4. **Park UI is separate** — it's **Panda CSS + Ark UI**, NOT Tailwind/shadcn. Never mix into a shadcn project. Only for Panda or Solid/Vue.
+5. **Gate heavy motion** — WebGL backgrounds and animated text must respect `prefers-reduced-motion` and have a static fallback; one GPU background per page, above the fold.
+6. **License** — most MIT; **react-bits is MIT + Commons Clause** (don't resell the components themselves).
+
+See the `component-libraries` skill (`references/registry.md` for the full table, one deep-dive file per library) for exhaustive component lists and code patterns.
+
 ## Quick Reference
 
 ### 1. Accessibility (CRITICAL)
