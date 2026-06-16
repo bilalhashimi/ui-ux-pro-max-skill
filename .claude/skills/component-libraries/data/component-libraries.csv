@@ -1,0 +1,30 @@
+No,Need,Library,Category,Stack,Install,Key Components,Dependencies,Docs URL,License
+1,Animated text effects,react-bits,Animation,React (+Tailwind opt),npx shadcn@latest add @react-bits/<Name>-TS-TW,BlurText/GradientText/DecryptedText/CountUp/SplitText/RotatingText,React; ogl/three for some,https://reactbits.dev,MIT + Commons Clause
+2,WebGL/canvas backgrounds,react-bits,Animation,React,npx shadcn@latest add @react-bits/<Name>-TS-TW,Aurora/Particles/Galaxy/Plasma/Silk/Hyperspeed/Waves,ogl/three,https://reactbits.dev,MIT + Commons Clause
+3,Creative cursor/scroll/image effects,react-bits,Animation,React,npx shadcn@latest add @react-bits/<Name>-TS-TW,BlobCursor/ImageTrail/ScrollReveal/TiltedCard/Magnet,framer-motion/gsap varies,https://reactbits.dev,MIT + Commons Clause
+4,Marketing special effects,Magic UI,Animation,React + shadcn,npx shadcn@latest add https://magicui.design/r/<name>,Animated Beam/Border Beam/Meteors/Confetti/Magic Card,motion,https://magicui.design/docs/components,MIT
+5,Showcase pieces,Magic UI,Layout,React + shadcn,npx shadcn@latest add https://magicui.design/r/<name>,Bento Grid/Dock/Globe/Marquee/Orbiting Circles/Icon Cloud,motion; cobe(Globe),https://magicui.design/docs/components,MIT
+6,Device mockups,Magic UI,Layout,React + shadcn,npx shadcn@latest add https://magicui.design/r/<name>,Safari/iPhone/Android,motion,https://magicui.design/docs/components,MIT
+7,Pattern backgrounds,Magic UI,Animation,React + shadcn,npx shadcn@latest add https://magicui.design/r/<name>,Dot Pattern/Grid Pattern/Retro Grid/Ripple/Flickering Grid,motion,https://magicui.design/docs/components,MIT
+8,Micro-interaction widgets,Animata,Animation,React + Tailwind + framer-motion,copy-paste from site,Animated counters/toggles/skeletons/preloaders/widgets,framer-motion,https://animata.design/components,MIT
+9,AI product UI,KokonutUI,AI,React + shadcn,npx shadcn@latest add @kokonutui/<name>,ai-prompt/ai-loading/ai-voice/ai-input-search,motion,https://kokonutui.com,MIT
+10,Rich animated cards,KokonutUI,Layout,React + shadcn,npx shadcn@latest add @kokonutui/<name>,card-flip/card-stack/spotlight-cards/liquid-glass-card/bento-grid,motion,https://kokonutui.com,MIT
+11,Stylish buttons & text,KokonutUI,Animation,React + shadcn,npx shadcn@latest add @kokonutui/<name>,gradient-button/particle-button/glitch-text/type-writer,motion,https://kokonutui.com,MIT
+12,Rich-text/WYSIWYG editor framework,Plate,Editor,React + Slate + shadcn,npx shadcn@latest add @plate/editor-ai,Editor framework/plugins/AI/slash menu/tables,slate; @platejs/* plugins,https://platejs.org,MIT
+13,Kanban board,Kibo UI,Data,React + shadcn,npx shadcn@latest add @kibo-ui/kanban,kanban,dnd lib,https://www.kibo-ui.com/docs,MIT
+14,Gantt chart,Kibo UI,Data,React + shadcn,npx shadcn@latest add @kibo-ui/gantt,gantt,dnd lib,https://www.kibo-ui.com/docs,MIT
+15,Code block,Kibo UI,Developer,React + shadcn,npx shadcn@latest add @kibo-ui/code-block,code-block/snippet/sandbox/comparison,syntax highlighter,https://www.kibo-ui.com/docs,MIT
+16,Rich table/data grid,Kibo UI,Data,React + shadcn,npx shadcn@latest add @kibo-ui/table,table/tree/contribution-graph,TanStack Table,https://www.kibo-ui.com/docs,MIT
+17,Media (video/image crop/stories),Kibo UI,Media,React + shadcn,npx shadcn@latest add @kibo-ui/<name>,video-player/image-crop/image-zoom/stories/reel/deck,per-component,https://www.kibo-ui.com/docs,MIT
+18,Lightweight editor,Kibo UI,Editor,React + shadcn,npx shadcn@latest add @kibo-ui/editor,editor,tiptap-family,https://www.kibo-ui.com/docs,MIT
+19,Utilities (qr/color/rating/dropzone),Kibo UI,Forms,React + shadcn,npx shadcn@latest add @kibo-ui/<name>,qr-code/color-picker/rating/dropzone/combobox/calendar,per-component,https://www.kibo-ui.com/docs,MIT
+20,Advanced date/time inputs,ui-x,Forms,React + Radix + shadcn,npx shadcn@latest add https://ui-x.junwen-k.dev/r/<name>.json,date-picker/date-time-field/date-time-range-field/time-field/calendar,radix,https://ui-x.junwen-k.dev,MIT
+21,Combobox/sortable/password/virtualizer,ui-x,Forms,React + Radix + shadcn,npx shadcn@latest add https://ui-x.junwen-k.dev/r/<name>.json,combobox/sortable/password-input/virtualizer/timeline,radix,https://ui-x.junwen-k.dev,MIT
+22,File dropzone,ui-x,Forms,React + shadcn,npx shadcn@latest add https://ui-x.junwen-k.dev/r/dropzone.json,dropzone/file-list,radix,https://ui-x.junwen-k.dev,MIT
+23,Product variant selector,stackzero/ui,Ecommerce,React + shadcn,npx shadcn@latest add https://ui.stackzero.co/r/variant-selector.json,variant-selector/variant-color-selector,motion,https://ui.stackzero.co/docs,MIT
+24,Ratings (star/face/like/upvote),stackzero/ui,Ecommerce,React + shadcn,npx shadcn@latest add https://ui.stackzero.co/r/rating-star.json,rating-star/rating-face/rating-like/rating-upvote,motion,https://ui.stackzero.co/docs,MIT
+25,Price/quantity/cart/reviews,stackzero/ui,Ecommerce,React + shadcn,npx shadcn@latest add https://ui.stackzero.co/r/<name>.json,price-format/quantity-input/carts/reviews/product-card,motion,https://ui.stackzero.co/docs,MIT
+26,Product image gallery,stackzero/ui,Ecommerce,React + shadcn,npx shadcn@latest add https://ui.stackzero.co/r/image-viewer.json,image-carousel/image-viewer,motion,https://ui.stackzero.co/docs,MIT
+27,Marketing section blocks,bundui,Blocks,React + shadcn,View Code / npx shadcn@latest add https://bundui.io/r/<block>.json,Hero/Pricing/Team/Testimonials/CTA/Stats/Features/Footer,motion,https://bundui.io,MIT
+28,Dashboard/ecommerce/real-estate blocks,bundui,Blocks,React + shadcn,View Code / shadcn registry,Dashboard UI/Ecommerce/Real Estate/Navbars/Banners,motion,https://bundui.io,MIT
+29,Panda CSS / multi-framework primitives,Park UI,Primitives,Ark UI + Panda (React/Solid/Vue),npx @park-ui/cli components add <name>,button/select/combobox/dialog/date-picker/tabs,panda-css; ark-ui,https://park-ui.com/docs/introduction,MIT
